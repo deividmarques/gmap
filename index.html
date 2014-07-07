@@ -29,11 +29,7 @@
         lng: -46.650696,
         scrollwheel: false
       });
-    map.drawOverlay({
-      lat: -23.5515232,
-      lng: -46.650696,
-      content: '<div class="maps-frontinsampa"></div>'
-    });
+    
 
     GMaps.geolocate({
       success: function(position) {
@@ -48,6 +44,12 @@
       always: function() {
         alert("Done!");
       }
+    });
+
+    map.drawOverlay({
+      lat: position.coords.latitude,
+      lng: position.coords.longitude,
+      content: '<div class="maps-frontinsampa"></div>'
     });
 
   });
