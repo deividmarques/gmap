@@ -54,7 +54,6 @@ var map;
 
     function printResults(data) {
       $('#foursquare-results').text(JSON.stringify(data));
-      prettyPrint();
     }
 
     $(document).on('click', '.pan-to-marker', function(e) {
@@ -73,7 +72,6 @@ var map;
     });
 
     $(document).ready(function(){
-      prettyPrint();
       map = new GMaps({
         div: '#map',
         lat: -12.043333,
