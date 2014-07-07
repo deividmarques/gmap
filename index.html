@@ -33,12 +33,12 @@
              
         var latLong = new google.maps.LatLng(lat, lon);
          
-                var marker = new google.maps.Marker({
-                    position: latLong
-                });      
+        var marker = new google.maps.Marker({
+            position: latLong
+        });      
                  
-                marker.setMap(map);
-        map.setZoom(8);
+        marker.setMap(map);
+        map.setZoom(16);
         map.setCenter(marker.getPosition());
       }
        
